@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="wonclickth=device-wonclickth, initial-scale=1">
+	<title>cal</title>
+	<script type="text/javascript">
+		function ac() {
+			document.getElementById('res').value="";
+			// body...
+		}
+		function disp(a){
+			document.getElementById('res').value+=a;
+
+		}
+		function cal(){
+			var op= eval(document.getElementById('res').value);
+			document.getElementById('res').value=op;
+					}
+	</script>
+</head>
+<body>
+	<caption><h2>SimpleCalculator</h2></caption>
+	<table border="1">
+		<tr>
+			<td colspan="3"><input type="text" id="res" onclick="ac()"></td>
+			<td><button type="button" onclick="ac()">AC</button></td>
+		</tr>
+		<tr>
+			<td align="center"><button type="button" onclick="disp('1')">1</button></td>
+			<td align="center"><button type="button" onclick="disp('2')">2</button></td>
+			<td align="center"><button type="button" onclick="disp('3')">3</button></td>
+			<td align="center"><button type="button" onclick="disp('+')">+</button></td>
+		</tr>
+				<tr>
+			<td align="center"><button type="button" onclick="disp('4')">4</button></td>
+			<td align="center"><button type="button" onclick="disp('5')">5</button></td>
+			<td align="center"><button type="button" onclick="disp('6')">6</button></td>
+			<td align="center"><button type="button" onclick="disp('-')">-</button></td>
+		</tr>
+				<tr>
+			<td align="center"><button type="button" onclick="disp('7')">7</button></td>
+			<td align="center"><button type="button" onclick="disp('8')">8</button></td>
+			<td align="center"><button type="button" onclick="disp('9')">9</button></td>
+			<td align="center"><button type="button" onclick="disp('*')">*</button></td>
+		</tr>
+				<tr>
+			<td align="center"><button type="button" onclick="disp('0')">0</button></td>
+			<td align="center"><button type="button" onclick="disp('/')">/</button></td>
+			<td align="center"><button type="button" onclick="disp('%')">%</button></td>
+			<td align="center"><button type="button" onclick="cal()">=</button></td>
+		</tr>
+		
+	</table>
+
+</body>
+</html>
